@@ -1,13 +1,17 @@
-# express-beautify
+# express-beautifier
 
-[![npm version](https://badge.fury.io/js/express-beautify.svg)](http://badge.fury.io/js/express-beautify)
+[![npm version](https://badge.fury.io/js/express-beautifier.svg)](http://badge.fury.io/js/express-beautifier)
 
 This tool make express output HTML, JS, CSS human-readable, rendered by any template engine.
 
 **Yes, minify also supported!**
 You can beautify youe code at **development**, minify it at **production**.
 
-##Usage
+######  About
+
+This package is based on [express-beautify](https://github.com/lackneets/express-beautify) package by [lackneets](https://github.com/lackneets/). As it seems to be no more maintained, this one is up-to-date one with latest dependencies.
+
+## Usage
 
 ####  Install
 
@@ -26,42 +30,42 @@ var app = express();
     app.engine('js', engines.swig); // render js file using swig
     app.engine('css', engines.swig); // render css file using swig
     app.set('view engine', 'html');
-    
+
     app.use(expressBeautify); // express-beautify filter
-    
+
 ````
-####  Examples 
+####  Examples
 
 ````js
     // Render something
     app.get('/', function(req, res, next){
         res.render('index');
     });
-    
+
     app.get('/renderJs', function(req, res, next){
         res.render('index.js');
     });
-    
+
     app.get('/renderCss', function(req, res, next){
         res.render('index.css');
     });
-    
+
     // Send something
-    
+
     app.get('/sendHTML', function(req, res, next){
         res.sendHTML('<div>Hello <span>World</span></div>');
     });
-    
+
     app.get('/sendJS', function(req, res, next){
         res.sendJS("(function(){alert('Hola!');})()");
     });
-    
+
     app.get('/sendCSS', function(req, res, next){
         res.sendCSS("body{display:'none'}");
     });
-    
+
     app.listen(8080);
-    
+
 ````
 
 #### Beautify Default Options
