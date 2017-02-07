@@ -16,7 +16,7 @@ This package is based on [express-beautify](https://github.com/lackneets/express
 ####  Install
 
 ````js
-npm install express-beautify
+npm install express-beautifier
 ````
 ####  Setup
 ````js
