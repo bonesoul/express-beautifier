@@ -1,6 +1,6 @@
 {
   "name": "express-beautifier",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Html minifier & beautifier middlware for express.js",
   "main": "index.js",
   "scripts": {
