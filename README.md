@@ -1,5 +1,7 @@
 # express-beautifier
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/bonesoul/express-beautifier.svg)](https://greenkeeper.io/)
+
 [![npm version](https://badge.fury.io/js/express-beautifier.svg)](http://badge.fury.io/js/express-beautifier)
 
 This tool make express output HTML, JS, CSS human-readable, rendered by any template engine.
